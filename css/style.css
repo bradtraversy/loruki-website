@@ -82,6 +82,10 @@ pre {
   justify-content: space-between;
 }
 
+.logo a:hover {
+  border: none;
+}
+
 /* Showcase */
 .showcase {
   height: 400px;
