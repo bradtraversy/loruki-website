@@ -262,6 +262,22 @@ pre {
   margin: 0 10px;
 }
 
+.fa-github:hover {
+  color: #000000;
+}
+
+.fa-facebook:hover {
+  color: #1773EA;
+}
+
+.fa-instagram:hover {
+  color: #B32E87;
+}
+
+.fa-twitter:hover {
+  color: #1C9CEA;
+}
+
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
