@@ -62,6 +62,10 @@ pre {
   background-color: var(--primary-color);
   color: #fff;
   height: 70px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 105;
 }
 
 .navbar ul {
@@ -74,8 +78,16 @@ pre {
   margin: 0 5px;
 }
 
-.navbar a:hover {
+.navbar a.current {
   border-bottom: 2px #fff solid;
+}
+
+.navbar a:hover {
+  border-bottom: 2px var(--secondary-color) solid;
+}
+
+.navbar .logo a:hover {
+  border-bottom: none;
 }
 
 .navbar .flex {
@@ -177,7 +189,7 @@ pre {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.cli .grid > *:first-child {
+.cli .grid>*:first-child {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
 }
@@ -220,7 +232,7 @@ pre {
   justify-self: flex-end;
 }
 
-.features-main .card > i {
+.features-main .card>i {
   margin-right: 20px;
 }
 
@@ -228,11 +240,11 @@ pre {
   padding: 30px;
 }
 
-.features-main .grid > *:first-child {
+.features-main .grid>*:first-child {
   grid-column: 1 / span 3;
 }
 
-.features-main .grid > *:nth-child(2) {
+.features-main .grid>*:nth-child(2) {
   grid-column: 1 / span 2;
 }
 
@@ -321,6 +333,7 @@ pre {
 
 /* Tablets and under */
 @media (max-width: 768px) {
+
   .grid,
   .showcase .grid,
   .stats .grid,
@@ -348,7 +361,7 @@ pre {
     animation: slideInFromBottom 1s ease-in;
   }
 
-  .cli .grid > *:first-child {
+  .cli .grid>*:first-child {
     grid-column: 1;
     grid-row: 1;
   }
@@ -365,8 +378,8 @@ pre {
     justify-self: center;
   }
 
-  .features-main .grid > *:first-child,
-  .features-main .grid > *:nth-child(2) {
+  .features-main .grid>*:first-child,
+  .features-main .grid>*:nth-child(2) {
     grid-column: 1;
   }
 }
@@ -385,7 +398,7 @@ pre {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
-  
+
   .showcase-form {
     width: 300px;
   }
