@@ -135,19 +135,19 @@ pre {
   outline: none;
 }
 
-.showcase::before,
 .showcase::after {
   content: '';
-  position: absolute;
   height: 100px;
-  bottom: -70px;
-  right: 0;
+  width: 100%;
+  display: block;
+  position: relative;
   left: 0;
-  background: #fff;
+  top: 0px;
+  background: white;
   transform: skewY(-3deg);
+  transform-origin: top;
   -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
+  -webkit-transform-origin: 0 0;
 }
 
 /* Stats */
