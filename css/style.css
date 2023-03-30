@@ -29,7 +29,6 @@ a {
   text-decoration: none;
   color: #333;
 }
-
 h1,
 h2 {
   font-weight: 300;
@@ -74,7 +73,7 @@ pre {
   margin: 0 5px;
 }
 
-.navbar a:hover {
+.navbar ul a:hover {
   border-bottom: 2px #fff solid;
 }
 
@@ -318,6 +317,12 @@ pre {
     transform: translateX(0);
   }
 }
+@media (max-width: 1000px){
+
+  .showcase-form{
+    width: 340px;
+  }
+}
 
 /* Tablets and under */
 @media (max-width: 768px) {
@@ -371,6 +376,9 @@ pre {
   }
 }
 
+
+
+
 /* Mobile */
 @media (max-width: 500px) {
   .navbar {
@@ -389,4 +397,5 @@ pre {
   .showcase-form {
     width: 300px;
   }
+
 }
