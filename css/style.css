@@ -196,6 +196,8 @@ pre {
   text-align: center;
   margin: 18px 10px 40px;
   transition: transform 0.2s ease-in;
+  height:170px;
+  width: 120px;
 }
 
 .languages .card h4 {
